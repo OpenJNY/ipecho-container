@@ -5,8 +5,8 @@ SLEEP="${IPECHO_SLEEP:-10}"
 
 while :; do
     echo "------------------"
-    echo "curl $URL"
-    curl "$URL"
+    echo "curl -s $URL"
+    curl -s "$URL"
     echo ""
     echo "------------------"
     sleep $SLEEP
